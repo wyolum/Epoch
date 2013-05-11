@@ -1,0 +1,127 @@
+    1  about
+    2  sudo raspi-config
+    3  uname
+    4  uname -f
+    5  uname --help
+    6  uname -a
+    7  sudo hwclock
+    8  clear
+    9  uname -a
+   10  sudo hwclock
+   11  sudo i2cdetect -y 1
+   12  sudo nano /etc/modules
+   13  sudo reboot
+   14  sudo i2cdetect -y 1
+   15  clear
+   16  sudo i2cdetect -y 1
+   17  sudo apt-get install python-smbus
+   18  sudo apt-get install i2c-tools
+   19  sudo i2cdetect -y 1
+   20  clear
+   21  sudo i2cdetect -y 1
+   22  ls /etc/modprobe.d/raspi-blacklist.conf 
+   23  clear
+   24  sudo nano /etc/modprobe.d/raspi-blacklist.conf 
+   25  sudo i2cdetect -y 1
+   26  pwd
+   27  clear
+   28  ls
+   29  mkdir GIT
+   30  cd GIT
+   31  git clone https://github.com/wyolum/Epoch.git
+   32  sudo apt-get update
+   33  clear
+   34  apt-get install git
+   35  sudo apt-get install git
+   36  clear
+   37  git clone https://github.com/wyolum/Epoch.git
+   38  cd Epoch
+   39  ls
+   40  py
+   41  clear
+   42  sudo python
+   43  vi Epoch.py
+   44  python
+   45  sudo python
+   46  vi Epoch.py
+   47  python
+   48  vi Epoch.py
+   49  sudo python Epoch.py
+   50  vi Epoch.py
+   51  sudo python Epoch.py
+   52  vi Epoch.py
+   53  sudo python Epoch.py
+   54  clear() q
+   55  clear
+   56  sudo python Epoch.py
+   57  sudo hwclock
+   58  clear
+   59  sudo modprobe rtc-ds1307
+   60  sudo bash
+   61  sudo hwclock -r 
+   62  date
+   63  date -help
+   64  date --help
+   65  date
+   66  sudo date --set="20130315 05:44:00"
+   67  clear
+   68  sudo date --set="20130511 06:06:00"
+   69  clear
+   70  sudo date --set="20140101 00:00:00"
+   71  sudo hwclock -w
+   72  sudo hwclock
+   73  sudo nano /etc/modules
+   74  sudo nano /etc/rc.local
+   75  sudo hwclock
+   76  clear
+   77  sudo reboot
+   78  sudo hwclock
+   79  date
+   80  cd GIT
+   81  ls
+   82  git -commit -a -m "debugged Epoch, changed default smbus to 1"
+   83  git commit -a -m "debugged Epoch, changed default smbus to 1"
+   84  cd Epoch/
+   85  git commit -a -m "debugged Epoch, changed default smbus to 1"
+   86  git config --global user.email "wyojustin@gmail.com"
+   87  git config --global user.name "Justin Shaw"
+   88  git commit -a -m "debugged Epoch, changed default smbus to 1"
+   89  git push origin master
+   90  vi Epoch.py
+   91  clear
+   92  sudo python Epoch.py
+   93  python
+   94  vi Epoch.py
+   95  sudo python
+   96  history | grep i2c
+   97  sudo i2cdetect -y 1
+   98  clear
+   99  sudo i2cdetect -y 1
+  100  date
+  101  sudo i2cdetect -y 1
+  102  history
+  103  history | grep nano
+  104  sudo nano /etc/modprobe.d/raspi-blacklist.conf
+  105  clear
+  106  sudo nano /etc/modprobe.d/raspi-blacklist.conf
+  107  fg
+  108  clear
+  109  sudo reboot
+  110  sudo i2c-detect -y 1
+  111  sudo i2cdetect -y 1
+  112  sudo nano /etc/modprobe.d/raspi-blacklist.conf
+  113  clear
+  114  sudo nano /etc/rc.local
+  115  sudo reboot
+  116  sudo i2cdetect -y 1
+  117  clear
+  118  sudo i2cdetect -y 1
+  119  cd GIT/Epoch
+  120  sudo python Epoch.py
+  121  sudo i2cdetect -y 1
+  122  python
+  123  clear
+  124  python
+  125  clear
+  126  sudo python
+  127  history > Epoch_install.txt
