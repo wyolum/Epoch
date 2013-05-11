@@ -1,5 +1,7 @@
 from Adafruit_I2C import *
 import datetime
+import smbus
+
 DS3231_I2C_ADDR = 104
 
 def bcd2dec(bcd):
@@ -17,8 +19,8 @@ def dec2bcd(dec):
     return (t << 4) + o;
 
 class Epoch:
-    def __init__(self):
-        self.ds3231 = Adafruit_I2C(DS3231_I2C_ADDR)
+    def __init__(self, bus=smbus.SMBus(1)):
+        self.ds3231 = Adafruit_I2C(DS3231_I2C_ADDR, bus)
 
     def getTime(self):
         data = self.ds3231.readList(0, 7)
@@ -37,7 +39,7 @@ class Epoch:
         self.ds3231.writeList(0, data[:7])
 
 if __name__ == '__main__':
-    ds3231 = DS3231()
-    print ds3231.getTime()
-    ds3231.setTime(datetime.datetime.now())
-    print ds3231.getTime()
+    epoch = Epoch()
+    print epoch.getTime()
+    epoch.setTime(datetime.datetime.now())
+    print epoch.getTime()
